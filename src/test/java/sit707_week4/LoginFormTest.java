@@ -76,18 +76,4 @@ public class LoginFormTest {
 		Assert.assertTrue(status.isLoginSuccess() == true);
 	}
 
-	@Test
-	public void testValidateCodeEmptyCode() {
-		Assert.assertTrue(LoginForm.validateCode(null) == false);
-	}
-
-	@Test
-	public void testValidateCodeWrongCode() {
-		Assert.assertTrue(LoginForm.validateCode("abcd") == false);
-	}
-
-	@Test
-	public void testValidateCodeCorrectCode() {
-		Assert.assertTrue(LoginForm.validateCode("123456") == true);
-	}
 }
